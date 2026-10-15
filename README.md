@@ -77,19 +77,38 @@ http://127.0.0.1:5000
 
 POST /predict
 
-### Request (example)
+### Example 1
+
+### Request 
 
 {
   "text": "I haven't received my card yet"
 }
 
 
-### Response (example)
+### Response 
 
 {
   "category": "card_arrival",
   "priority": "low",
   "sentiment": "neutral"
+}
+
+### Example 2
+
+### Request 
+
+{
+  "text": "My card was stolen"
+}
+
+
+### Response 
+
+{
+  "category": "lost_or_stolen_card",
+  "priority": "high",
+  "sentiment": "negative"
 }
 
 ### Using cURL
